@@ -294,3 +294,4 @@ dist
 .yarn/install-state.gz
 .pnp.*
 prisma/dev.db
+prisma/migrations
