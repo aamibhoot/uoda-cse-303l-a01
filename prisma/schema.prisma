@@ -1,0 +1,33 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Student {
+  id         Int     @id @default(autoincrement())
+  email      String  @unique
+  first_name String
+  last_name  String
+  dob        String
+  mobile     String  @unique
+  department String
+  studentId  String  @unique
+  password   String
+  isVerified Boolean @default(false)
+}
+
+model User {
+  id         Int     @id @default(autoincrement())
+  email      String  @unique
+  uname      String  @unique
+  password   String
+  isAdmin    Boolean @default(false)
+  isVerified Boolean @default(false)
+}

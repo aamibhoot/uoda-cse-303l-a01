@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply dark:bg-trueGray-900;
+  }
+}
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: rgba(67, 57, 202, 0.409);
+}
+
+::selection {
+  color: white;
+  background: rgba(67, 57, 202, 0.409);
+}
+.glassbg {
+  /* From https://css.glass */
+  background: rgba(30, 29, 87, 0.643);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  z-index: 99999;
+}
