@@ -8,9 +8,12 @@
     "build": "next build",
     "start": "next start"
   },
+  "engines": {
+    "node": "16.x"
+  },
   "repository": {
     "type": "git",
-    "url": "https://gituhb.com/web3templates/nextly-template"
+    "url": "https://github.com/aamibhoot/uoda-cse-303l-a01.git"
   },
   "keywords": [
     "ucs",
