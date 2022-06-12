@@ -46,6 +46,7 @@
     "autoprefixer": "^10.0.4",
     "babel-plugin-macros": "^3.1.0",
     "babel-plugin-twin": "^1.0.2",
+    "cz-conventional-changelog": "3.3.0",
     "postcss": "^8.1.10",
     "tailwindcss": "^2.2.2",
     "twin.macro": "^2.5.0"
@@ -54,6 +55,11 @@
     "twin": {
       "preset": "emotion",
       "includeClassNames": true
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
     }
   }
 }

@@ -1,7 +1,7 @@
 
 <p align="center">
   <a href="[Aami Bhoot](https://github.com/aamibhoot)">
-    <img src="" height="128">
+    <img src="https://raw.githubusercontent.com/aamibhoot/uoda-cse-303l-a01-/main/public/logo.png" height="128">
     <h1 align="center">CSE303L Project 01
  </h1>
   </a>
