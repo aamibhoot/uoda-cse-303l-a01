@@ -7,7 +7,7 @@ import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/router";
 const hcaptcha = process.env.NEXT_PUBLIC_HC_KEY;
 
-export default function Home() {
+export default function Login() {
   const [token, setToken] = useState(null);
   const captchaRef = useRef(null);
   const router = useRouter();
@@ -51,7 +51,7 @@ export default function Home() {
       });
     router.push("/admin");
   });
-  
+
   return (
     <>
       <Head>
@@ -105,7 +105,7 @@ export default function Home() {
                         className="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-white"
                         placeholder="Username"
                         required={true}
-                        ref={input => input && input.focus()}
+                        ref={(input) => input && input.focus()}
                       />
                     </div>
                     <div className="mb-4 w-full">

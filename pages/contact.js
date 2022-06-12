@@ -6,7 +6,7 @@ import Benefits from "../components/benefits";
 import Footer from "../components/footer";
 import Cta from "../components/cta";
 
-export default function About() {
+export default function Contact() {
   return (
     <>
       <Head>
